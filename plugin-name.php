@@ -27,6 +27,6 @@ if ( ! defined( 'PSLUG_ASSETS' ) ) {
 	define( 'PSLUG_ASSETS', $plugin_dir . 'assets/' );
 }
 
-require_once( PSLUG_INCLUDES . 'autoloader.php' );
+require_once( PSLUG_INCLUDES . 'autoload.php' );
 
 require_once( PSLUG_INCLUDES . 'main.php' );
