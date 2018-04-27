@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @return array
  * @since 1.0.0
  */
-function cbc_get_admin_pages() {
+function pslug_get_admin_pages() {
 	$objects = \PluginName\PluginName()->objects;
 
 	return $objects instanceof \PluginName\Objects ? $objects->get_admin_pages() : array();
@@ -30,7 +30,7 @@ function cbc_get_admin_pages() {
  * @return bool
  * @since 1.0.0
  */
-function cbc_get_admin_page( $page ) {
+function pslug_get_admin_page( $page ) {
 	$objects = \PluginName\PluginName()->objects;
 
 	return $objects instanceof \PluginName\Objects ? $objects->get_page( $page ) : null;
@@ -45,7 +45,7 @@ function cbc_get_admin_page( $page ) {
  * @return bool
  * @since 1.0.0
  */
-function cbc_get_field( $args, $name = '' ) {
+function pslug_get_field( $args, $name = '' ) {
 	$objects = \PluginName\PluginName()->objects;
 
 	return $objects instanceof \PluginName\Objects ? $objects->get_field( $args, $name ) : null;
