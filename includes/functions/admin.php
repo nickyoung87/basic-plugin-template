@@ -17,9 +17,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @since 1.0.0
  */
 function cbc_get_admin_pages() {
-	$objects = \CheckfrontBookingCalendar\CheckfrontBookingCalendar()->objects;
+	$objects = \PluginName\PluginName()->objects;
 
-	return $objects instanceof \CheckfrontBookingCalendar\Objects ? $objects->get_admin_pages() : array();
+	return $objects instanceof \PluginName\Objects ? $objects->get_admin_pages() : array();
 }
 
 /**
@@ -31,9 +31,9 @@ function cbc_get_admin_pages() {
  * @since 1.0.0
  */
 function cbc_get_admin_page( $page ) {
-	$objects = \CheckfrontBookingCalendar\CheckfrontBookingCalendar()->objects;
+	$objects = \PluginName\PluginName()->objects;
 
-	return $objects instanceof \CheckfrontBookingCalendar\Objects ? $objects->get_page( $page ) : null;
+	return $objects instanceof \PluginName\Objects ? $objects->get_page( $page ) : null;
 }
 
 /**
@@ -46,8 +46,8 @@ function cbc_get_admin_page( $page ) {
  * @since 1.0.0
  */
 function cbc_get_field( $args, $name = '' ) {
-	$objects = \CheckfrontBookingCalendar\CheckfrontBookingCalendar()->objects;
+	$objects = \PluginName\PluginName()->objects;
 
-	return $objects instanceof \CheckfrontBookingCalendar\Objects ? $objects->get_field( $args, $name ) : null;
+	return $objects instanceof \PluginName\Objects ? $objects->get_field( $args, $name ) : null;
 }
 
