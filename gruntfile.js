@@ -6,15 +6,15 @@ module.exports = function( grunt ) {
 
 	// Set files to include/exclude in a release.
 	var distFiles = [
-		//'**',
-		//'!build/**',
-		//'!node_modules/**',
-		//'!.editorconfig',
-		//'!.gitignore',
-		//'!.jshintrc',
-		//'!gruntfile.js',
-		//'!package.json',
-		//'!**/*~'
+		'**',
+		'!build/**',
+		'!node_modules/**',
+		'!.editorconfig',
+		'!.gitignore',
+		'!.jshintrc',
+		'!gruntfile.js',
+		'!package.json',
+		'!**/*~'
 	];
 
 	grunt.initConfig( {
@@ -39,8 +39,7 @@ module.exports = function( grunt ) {
 					archive: './build/plugin-name-<%= pkg.version %>.zip'
 				},
 				expand: true,
-				cwd: 'plugin-folder/',
-				src: '**',
+				src: distFiles,
 				dest: '/plugin-name'
 			}
 		},
@@ -49,8 +48,7 @@ module.exports = function( grunt ) {
 		copy: {
 			main: {
 				expand: true,
-				cwd: 'plugin-folder/',
-				src: '**',
+				src: distFiles,
 				dest: 'build/plugin-name'
 			}
 		}
