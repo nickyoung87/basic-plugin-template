@@ -34,7 +34,7 @@ class Menu {
 
 		$svg_icon = '';
 
-		add_menu_page( __( 'Checkfront Booking Calendar Settings', 'pslug' ), __( 'Checkfront Booking Calendar', 'pslug' ), 'manage_options', 'pslug_settings', function () {
+		add_menu_page( __( 'Plugin Name Settings', 'pslug' ), __( 'Plugin Name', 'pslug' ), 'manage_options', 'pslug_settings', function () {
 			$page = new Settings( 'settings' );
 			$page->html();
 		}, $svg_icon );
